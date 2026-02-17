@@ -1,0 +1,12 @@
+craftingTable.addShapeless("sinewss", <item:biomancy:mob_sinew> * 2, [<item:minecraft:porkchop>,<item:minecraft:string>]);
+craftingTable.addShapeless("marrow", <item:biomancy:mob_marrow> * 2, [<item:minecraft:bone>,<item:minecraft:wooden_axe>]);
+craftingTable.addShapeless("warrow", <item:biomancy:withered_mob_marrow> * 4, [<item:minecraft:wither_skeleton_skull>,<item:minecraft:stone_axe>]);
+craftingTable.addShapeless("ggland", <item:biomancy:mob_gland> * 2, [<item:minecraft:spider_eye>,<item:minecraft:string>]);
+craftingTable.addShapeless("tgland", <item:biomancy:toxin_gland> * 1, [<item:minecraft:fermented_spider_eye>,<item:minecraft:wheat_seeds>]);
+craftingTable.addShapeless("vgland", <item:biomancy:volatile_gland> * 1, [<item:minecraft:gunpowder>,<item:minecraft:blaze_powder>]);
+craftingTable.addShapeless("clawss", <item:biomancy:mob_claw> * 2, [<item:minecraft:bone>,<item:minecraft:shears>]);
+craftingTable.addShapeless("fleshyle", <item:biomancy:flesh_bits> * 3, [<item:minecraft:porkchop>,<item:minecraft:rotten_flesh>]);
+craftingTable.addShapeless("fragsment", <item:biomancy:bone_fragments> * 5, [<item:minecraft:bone>,<item:minecraft:bone>,<item:minecraft:wooden_axe>]);
+craftingTable.addShapeless("fibery", <item:biomancy:elastic_fibers> * 2, [<item:minecraft:porkchop>,<item:minecraft:string>,<item:minecraft:porkchop>,<item:minecraft:string>,<item:minecraft:string>]);
+craftingTable.addShapeless("angryfragee", <item:biomancy:mineral_fragment> * 2, [<item:minecraft:iron_ingot>,<item:minecraft:stone_pickaxe>]);
+craftingTable.addShapeless("fangy", <item:biomancy:mob_fang> * 2, [<item:minecraft:bone>,<item:minecraft:bone>,<item:minecraft:shears>]);
