@@ -1,0 +1,25 @@
+#The number of kills required to reach Tier 4.
+tier4 = 42
+#The number of kills required to reach Tier 3.
+tier3 = 24
+#The number of kills required to reach Tier 2.
+tier2 = 11
+#The number of kills required to reach Tier 3.
+killsToTier3 = 30
+#The number of kills required to reach Tier 2.
+killsToTier2 = 12
+#The kill multiplier for Tier 0.
+killMultiplierTier0 = 1
+#The number of kills required to reach Tier 4.
+killsToTier4 = 50
+#The kill multiplier for Tier 2.
+killMultiplierTier2 = 10
+#The kill multiplier for Tier 1.
+killMultiplierTier1 = 4
+#The number of kills required to reach Tier 1.
+killsToTier1 = 6
+#The kill multiplier for Tier 3.
+killMultiplierTier3 = 18
+#The number of kills required to reach Tier 1.
+tier1 = 5
+

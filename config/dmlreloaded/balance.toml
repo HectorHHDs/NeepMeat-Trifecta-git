@@ -1,0 +1,5 @@
+#If true, the Glitch Armor will allow creative flight.
+isGlitchArmorCreativeFlightEnabled = true
+#If true, the Glitch Armor will drop extra items when breaking blocks.
+isGlitchArmorExtraDropsEnabled = true
+

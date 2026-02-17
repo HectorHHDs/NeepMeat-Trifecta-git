@@ -1,0 +1,9 @@
+#The horizontal spacing between the overlay and the screen edge.
+guiOverlayHorizontalSpacing = 0
+#The horizontal spacing between the overlay and the screen edge.
+guiOverlayVerticalSpacing = 0
+#The horizontal spacing between the overlay and the screen edge.
+guiOverlaySide = 0
+#Whether the overlay should be shown by default when using the Curios integration. Specify false if you want to hide the UI by default, such as when the UI overlaps. If hidden, it can be made visible by pressing Ctrl.
+curiosIntegrationDefaultOverlay = true
+
