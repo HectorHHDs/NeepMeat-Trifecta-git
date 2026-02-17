@@ -1,0 +1,421 @@
+// ### THE MOD REQUIRES A RESTART OF THE GAME TO APPLY CHANGES ###
+{
+  // this is the main spread factor (default is 2)
+  //
+  // tips: a spread factor can be a decimal number (such as 1.5)
+  //       a spread factor of 1 means all structure's placements are not modified (useful if you want to use only custom spread factors)
+  //       a spread factor above 1 means all structures are rarer
+  //       a spread factor below 1 means all structures are more common
+  //       a spread factor of 0 disables all structures entirely
+  "spreadFactor": 2,
+
+  // Some structure mods/datapacks do not specify a custom salt or use the same salt for all their structures, which might cause structure overlap.
+  // Enabling this is supposed to reduce this phenomenon, as all structure sets will have their own salt, hashed from their id.
+  // If unsure, leave this enabled.
+  "idBasedSalt": true,
+
+  // this is a list of custom spread factors
+  "customSpreadFactors": [
+    // example of the mansion being doubled in rarity (the mod's default)
+    {
+      "structure": "ae2:meteorite",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "apotheosis:tower_leaf",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "apotheosis:tower_main",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "apotheosis:tower_sand",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "apotheosis:tower_spruce",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "bettermineshafts:mineshafts",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "biomancy:abandoned_lab",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "biomancy:carcass_worm",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "biomancy:keter_worm",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "biomancy:vault",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "brewery:brewfest_tent",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "chaoszpack_structures:watch_tower_1",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "dimdoors:gateways",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "echoes_of_the_end__structures_:crying_obsidian_tower",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "echoes_of_the_end__structures_:end_dungeon_tower",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "echoes_of_the_end__structures_:end_enchanted_temple",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "echoes_of_the_end__structures_:end_pillar",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "echoes_of_the_end__structures_:end_shulker_tower",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "echoes_of_the_end__structures_:end_temple",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "echoes_of_the_end__structures_:end_warship",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "echoes_of_the_end__structures_:end_well",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:crucifiedsect",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:deathcamp",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:devastatedfarm",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:entitytower",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:forestbody",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:fortified_church",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:graveyard",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:herobrine_sanctum",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:laboratory",
+      "factor": 5//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:labyrinth",
+      "factor": 5//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:laststandhouse",
+      "factor": 5//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:militaryritual",
+      "factor": 5//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:psycho_house",
+      "factor": 5//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:villagertree",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "horror_element_mod:voodoo_sanctum",
+      "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "meadow:bench",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "meadow:chalet",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "meadow:chapel",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "meadow:logging_camp",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "meadow:monument",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "meadow:observation_post",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "meatstruct:industry",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:ancient_cities",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:buried_treasures",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:desert_pyramids",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:end_cities",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:igloos",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:jungle_temples",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:mineshafts",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:nether_complexes",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:nether_fossils",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:ocean_monuments",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:ocean_ruins",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:pillager_outposts",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:ruined_portals",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:shipwrecks",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:swamp_huts",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:trail_ruins",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:villages",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "minecraft:woodland_mansions",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "neepmeat:jungle_pyramid",
+      "factor": 0.5//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "neepmeat:verrucous_rock",
+      "factor": 0.5//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "nullscape:dragon_skeleton",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "scguns:aboveground_medium",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "scguns:cog_chambers",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "scguns:trench",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "supplementaries:way_signs",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:facility",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:fire_staton",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:gas_station",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:hardware_store",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:military_camp",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:mini_market",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:old_road",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:pharmacy",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:suburban_house",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:survivor_camp",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:survivor_house",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "survival_instinct:the_farm",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "tconstruct:end_sky_island",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "tconstruct:nether_ocean_island",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "tconstruct:overworld_ocean_island",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "tconstruct:overworld_sky_island",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "underground_village:underground_village",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "underground_village:underwater_village",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "unusualend:ancient_end_tower",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "unusualend:chorus_cane",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "unusualend:end_house",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "unusualend:firefly_nest",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "unusualend:flying_end_ship",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "unusualend:gloopy_nest",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "unusualend:small_gloopy_ruins",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "unusualend:wanderer_island",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "unusualend:warped_flying_end_ship",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+    {
+      "structure": "unusualend:warped_station",
+      "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+    },
+
+    // add the structures you want to modify in the format:
+    // (don't forget to remove "//", and use dots for decimal numbers)
+    //
+    // {
+    //     "structure": "namespace:structure_name",
+    //     "factor": number
+    // },
+    //
+    // where "structure" is a structure_set or the name of a structure
+    // /!\ if you put the name of a structure, all structures in its set will be modified
+    // (example: "minecraft:village_plains" will modify all structures in the "villages" set)
+    // see https://minecraft.wiki/w/Tutorials/Custom_structures#Structure_Set for more info
+    //
+    // tip: you can dump all structure sets in a file by running the custom command /dumpstructuresets
+    // tip: the same spread factors rules apply here (set to 0 to disable said structure)
+  ]
+}
