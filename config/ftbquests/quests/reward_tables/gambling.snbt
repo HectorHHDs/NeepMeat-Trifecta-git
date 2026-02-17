@@ -1,0 +1,47 @@
+{
+	id: "4ED6CF0750BB03E3"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			auto: "invisible"
+			command: "/kill @p"
+			elevate_perms: true
+			silent: true
+			type: "command"
+		}
+		{ count: 5, item: "farmersdelight:steak_and_potatoes", weight: 10.0f }
+		{ count: 32, item: "minecraft:raw_iron", weight: 4.0f }
+		{ count: 16, item: "minecraft:raw_copper", weight: 4.0f }
+		{ count: 2, item: "minecraft:diamond", weight: 4.0f }
+		{ item: "neepmeat:advanced_integrator" }
+		{
+			description: ""
+			icon: "minecraft:copper_block"
+			title: "I just ate your tokens"
+			type: "toast"
+			weight: 5.0f
+		}
+		{ item: "neepmeat:blood_bubble_sapling", weight: 2.0f }
+		{ item: "neepmeat:cat_ears", weight: 2.0f }
+		{ count: 12, item: "neepmeat:meat_steel_ingot", weight: 4.0f }
+		{ item: "compact_storage:compact_chest_white" }
+		{
+			item: {
+				Count: 1
+				id: "travelersbackpack:iron"
+				tag: {
+					StarterUpgrades: {
+						Items: [{
+							Count: 1b
+							id: "travelersbackpack:tanks_upgrade"
+						}]
+					}
+				}
+			}
+			weight: 2.0f
+		}
+		{ item: "ae2:cell_component_1k", weight: 2.0f }
+	]
+	title: "Gambling"
+}

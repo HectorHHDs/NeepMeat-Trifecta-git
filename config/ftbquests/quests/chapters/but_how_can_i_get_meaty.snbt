@@ -1,0 +1,778 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "but_how_can_i_get_meaty"
+	group: ""
+	icon: "neepmeat:verrucous_stone_port"
+	id: "15BF5723A1271A5A"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"This projector will give you knowledge on how to get meaty, but it might not tell you everything."
+				""
+				"One of the largely important things this mod can offer for earlygame farming is probably the Scuttle, which you can craft with biomechanical parts. You should probably give it a name, its a hard worker."
+			]
+			id: "7D6A4A8BE2E7F04A"
+			rewards: [{
+				id: "3723FBEBA417F3A2"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "4688D05279ABDFA0"
+				item: "neepmeat:projector"
+				type: "item"
+			}]
+			title: "Your guide to meaty machinery"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7D6A4A8BE2E7F04A"]
+			description: ["Kill some zombies to get rough brains! these can be useful later on."]
+			id: "741C7DF556270AB9"
+			rewards: [{
+				id: "3DD5F71E59702401"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "757D922236AD7606"
+				item: "neepmeat:brain_rough"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7D6A4A8BE2E7F04A"]
+			description: ["Use a tissue operator above a drain to get blood >:)"]
+			id: "540E4EEC09374525"
+			rewards: [{
+				id: "44F88AC19B23809A"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "28DD50A40022B484"
+					item: "neepmeat:fluid_drain"
+					type: "item"
+				}
+				{
+					id: "3F1EFA47613BA164"
+					item: {
+						Count: 1
+						id: "neepmeat:sacrificial_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["540E4EEC09374525"]
+			description: ["You can find these eggs in dungeons or any chest loot tables. You can also order one using the Delivery organism by dropping a reanimated heart into a 1 block lava pool surrounded by rusted metal. You must feed it 1 bucket of blood to get it to hatch"]
+			id: "4D9D7776FC027AC3"
+			rewards: [{
+				id: "3C1FF3B1DA9654C9"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "21FE7933F3005CC6"
+				item: "neepmeat:integrator_egg"
+				type: "item"
+			}]
+			title: "You need integrating!"
+			x: 0.75d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"741C7DF556270AB9"
+				"4D9D7776FC027AC3"
+			]
+			description: [
+				"Now place the rough brains you have on a Neepmeat pedestal connected to the integrator; it will enlighten the brain."
+				""
+				"You can use these brains for machinery or feed them to cows to generate more rough brains! This does kill the cow, however."
+			]
+			id: "6EB069717739E97E"
+			rewards: [{
+				id: "540DF74899066066"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "61D39BEB0E233B0F"
+				item: "neepmeat:enlightened_brain"
+				type: "item"
+			}]
+			title: "Better Brains"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6EB069717739E97E"
+				"70FC8335A0D4279E"
+				"6F470A4DF86AFD1B"
+			]
+			description: [
+				"You might REALLY want this"
+				""
+				"Cheapest auto farmer, but is a bit buggy. You might want create mod harvesters next"
+			]
+			id: "2D6483751497ED1B"
+			rewards: [{
+				id: "79A0D0774A75F1CF"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "14112F931D3CFC8C"
+				item: "neepmeat:farming_scutter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.75d
+		}
+		{
+			dependencies: ["4D9D7776FC027AC3"]
+			description: ["Make some whisper wheat for some more machines or for some new enlightened food."]
+			id: "003FACD88D9CB80D"
+			rewards: [{
+				id: "1362DD4598DA1CD7"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "663FE32B47BCB6F0"
+				item: "neepmeat:whisper_wheat_seeds"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4D9D7776FC027AC3"]
+			description: ["You can make these if your potatoes dont have the desired amount of writhing and glands."]
+			id: "6A6EFE22F9985F8F"
+			rewards: [{
+				id: "19BAAF725ED93809"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7FE471B9ED5852A5"
+				item: "neepmeat:flesh_potato"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"003FACD88D9CB80D"
+				"6A6EFE22F9985F8F"
+				"2D6483751497ED1B"
+			]
+			description: ["By putting an animal trough next to some animals, they automatically reproduce. Useful for meat farms"]
+			id: "2CCCB3A14391D365"
+			rewards: [{
+				id: "6F7F263BA2378441"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5C7E2A931C9F4E6C"
+					item: "neepmeat:feeding_trough"
+					type: "item"
+				}
+				{
+					id: "480323B186AB563A"
+					item: "neepmeat:animal_feed_bucket"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"2CCCB3A14391D365"
+				"6288F1D35834592B"
+			]
+			description: ["These separates a specified number of adult mobs by teleporting them onto it- you can use this for automatic mob breeding chambers and to generate meat slurry for your food needs :p (or to feed the power flower)"]
+			id: "6C582E9E81875333"
+			rewards: [{
+				id: "20FAD6BD41825BE0"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6310745C501F2D9E"
+				item: "neepmeat:separator"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7D6A4A8BE2E7F04A"
+				"4D9D7776FC027AC3"
+			]
+			description: [
+				"NEEP motors provide energy to your machines, and they get their power through transient ichor from kidney stones or can be powered by the power flower's vascular system"
+				""
+				"There are also bigger and advanced motors that provide more power"
+			]
+			id: "6288F1D35834592B"
+			rewards: [{
+				id: "2C25D5AB63FE8092"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "471D238A15491A7E"
+				item: "neepmeat:motor_unit"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["4D9D7776FC027AC3"]
+			description: ["By placing this compactor next to an integrator and filling it with meat, you can get integration fluid cartridges for other recipes"]
+			id: "70FC8335A0D4279E"
+			rewards: [{
+				id: "399104980E001C9A"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "67C778EA3B8BACB2"
+					item: "neepmeat:charnel_compactor"
+					type: "item"
+				}
+				{
+					id: "5818575841E3C541"
+					item: "neepmeat:integration_charge_crude"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6288F1D35834592B"
+				"4D9D7776FC027AC3"
+			]
+			description: ["By powering a crusher with the NEEP motor, you can get meat scraps for meat bricks and some recipes by throwing meat in"]
+			id: "6F470A4DF86AFD1B"
+			rewards: [{
+				id: "32908B957DBF340B"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1687C04B66B342EB"
+				item: "neepmeat:grinder"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["425F80201E64DC3B"]
+			description: ["Basically, these just collect dirty ore fats from adjacent basins for further processing."]
+			id: "284151A0CF3E856D"
+			rewards: [{
+				id: "16F952C0665859E3"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "21371E5D4D5DA940"
+				item: "neepmeat:collector"
+				type: "item"
+			}]
+			title: "Fat Collectors"
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["284151A0CF3E856D"]
+			description: ["Now, you can put your dirty ore fats into the trommel and if you supply water it'll begin cleaning and purifying the dirty ore fats. Now if you press down these ores, it'll receive a further 150% boost to output. (Has a fail chance, but minimum is a 1:1 conversion, so why not do it?)"]
+			id: "7C7AD43E2BFCD7F8"
+			rewards: [{
+				id: "6DDD73194E8FE9FE"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0DB3DEBE16DCDAF8"
+				item: "neepmeat:small_trommel"
+				type: "item"
+			}]
+			title: "Purifying your fats"
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6288F1D35834592B"]
+			description: ["To get enzymes for ore processing, you need to mix 1 Glandular potato with 333 mB of water. You can use item pipes for moving the glandular potatoes into this machine and put a water tank right next to the mixer to start mixing."]
+			id: "5F95E8FADC3ABD98"
+			rewards: [{
+				id: "78F67C454714A79B"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C9E04B0730BE74A"
+				item: "neepmeat:mixer"
+				type: "item"
+			}]
+			title: "Getting enzymes"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5F95E8FADC3ABD98"]
+			description: [
+				"You heard me"
+				"{@pagebreak}"
+				"Anyways, now you want to pump in your eldritch enzymes into this basin and per 333mB of enzyme, you can drop 1 raw ore in to convert it to 333mB dirty ore fat. Make sure your fat collector is on the side of this rendering basin to collect the dirty ore fat for further processing."
+				""
+				"BUT we're not done yet, although you can use a hydraulic press here to convert these dirty fats into ingots at a 120% ratio."
+			]
+			id: "425F80201E64DC3B"
+			rewards: [{
+				id: "7ED36BCF99C93EDD"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "62A15B6A51CA074A"
+				item: "neepmeat:crucible"
+				type: "item"
+			}]
+			title: "Getting fat"
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C7AD43E2BFCD7F8"]
+			description: ["You can pump in your fats into here to convert into ingots"]
+			id: "1E8BCEA7A8DA2788"
+			rewards: [{
+				id: "0072A95C57A69112"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "09821541D4BD20D6"
+				item: "neepmeat:hydraulic_press"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			description: ["Filters are a little broken here. As in, it doesnt show when you add new elements or tags to the filter. To fix this, simply press f11 and the filters should refresh and fit the screen."]
+			id: "4903B1F59A47A009"
+			tasks: [{
+				id: "2DB6B8C1F50041D2"
+				title: "NOTES FOR PEOPLE USING FILTERS"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5F95E8FADC3ABD98"]
+			description: ["You can get a crimson fungus from the nether and enlighten it to get these saplings. When grown, the blood bubble trees will have leaves with blood bubbles. When mixed with water, they become a steady source of blood."]
+			id: "09829221CDA00D2A"
+			tasks: [{
+				id: "5CA03F93E836AB66"
+				item: "neepmeat:blood_bubble_sapling"
+				type: "item"
+			}]
+			title: "Automating blood"
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6288F1D35834592B"]
+			description: ["When powered, these blades shred mobs and produces tissue slurry to the drains below them."]
+			id: "4FA07FD03C1357E3"
+			tasks: [{
+				id: "00E1A46A6F65F8C3"
+				item: "neepmeat:death_blades"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"4FA07FD03C1357E3"
+				"7C7AD43E2BFCD7F8"
+				"1E8BCEA7A8DA2788"
+			]
+			description: ["By putting the tissue slurry in a trommel, you can separate the slurry into meat and a byproduct. You can also STAMP these meat liquids to form meat bricks at a much cheaper cost."]
+			id: "4E5DD499FD118AC3"
+			tasks: [{
+				id: "00AFE181B624F7DE"
+				item: "neepmeat:meat_bucket"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4E5DD499FD118AC3"
+				"5F95E8FADC3ABD98"
+				"09829221CDA00D2A"
+			]
+			description: ["By mixing the meat and blood with an integration cartridge, you can generate integration fluid for more crafting recipes."]
+			id: "1590A118C5811C8A"
+			tasks: [{
+				id: "44CCADBDBCD759D8"
+				item: "neepmeat:work_fluid_bucket"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1590A118C5811C8A"
+				"15120A7F18FBFBA5"
+			]
+			description: [
+				"Now, you've unlocked Computre. (Very good)"
+				""
+				"You'll use these computres for special crafting recipes, but you can also program them to automate tasks."
+			]
+			id: "66D2B139CD57A30F"
+			tasks: [{
+				id: "43819B646A2934D0"
+				item: "neepmeat:plc"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1590A118C5811C8A"]
+			description: ["PLC but not P. You can use these for automatic crafting recipes."]
+			id: "15120A7F18FBFBA5"
+			tasks: [{
+				id: "7C7A3109907804EC"
+				item: "neepmeat:fabricator"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["66D2B139CD57A30F"]
+			description: [
+				"Now you're getting power with flowers. This produces transient ichor in two ways -"
+				""
+				"Method 1: using photosynthetic organs to generate ichor from sunlight and water"
+				"Method 2 (better): using its roots to feed off of animal feed to generate ichor"
+				""
+				"Either way, you'll need to put a fluid port next to the controller to pump in food or water."
+			]
+			id: "2EEC7D44F0B7015A"
+			tasks: [
+				{
+					id: "48E740A5A7FCB65C"
+					item: "neepmeat:power_flower_seeds"
+					type: "item"
+				}
+				{
+					id: "11BEF6168C972AF3"
+					item: "neepmeat:power_flower_fluid_port"
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6288F1D35834592B"]
+			description: ["Easy way to pump fluids through pipes"]
+			id: "600052063A91A618"
+			tasks: [{
+				id: "26D316D53189CE81"
+				item: "neepmeat:pump"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2EEC7D44F0B7015A"
+				"6C9E5644460A3A22"
+			]
+			description: [
+				"Digests animal feed and creates vascular energy that can be passed through the heart machine. You can stack as many metabolizers as you want for faster digestion and more energy."
+				""
+				"NOTE: WONT WORK WITHOUT A MACHINE CONTROLLER ATTACHED"
+			]
+			id: "19B28B5114303271"
+			tasks: [
+				{
+					id: "6F866085AEE4E29A"
+					item: "neepmeat:stomach"
+					type: "item"
+				}
+				{
+					id: "0ABB4824B744E9EA"
+					item: "neepmeat:metaboliser_segment"
+					type: "item"
+				}
+				{
+					id: "4253614794936837"
+					item: "neepmeat:living_machine_controller"
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"2EEC7D44F0B7015A"
+				"19B28B5114303271"
+			]
+			description: [
+				"You can pump transient ichor into this heart machine to create much more energy efficient power transfers. However, it needs to transfer power through vascular conduits instead of fluid pipes."
+				""
+				"Works with Advanced N.E.E.P. machinery"
+			]
+			id: "2B43DA81D5F118DF"
+			tasks: [
+				{
+					id: "4AD4CCAF4CD9D13B"
+					item: "neepmeat:fluid_exciter"
+					type: "item"
+				}
+				{
+					id: "128E8FB881CB8A5C"
+					item: "neepmeat:vascular_conduit"
+					type: "item"
+				}
+			]
+			x: 17.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"2B43DA81D5F118DF"
+				"6C9E5644460A3A22"
+			]
+			description: ["This motor can directly generate energy from the vascular network."]
+			id: "6D6A2399F2FDD9E9"
+			tasks: [{
+				id: "0D31D63E30E86072"
+				item: "neepmeat:advanced_motor"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"2B43DA81D5F118DF"
+				"6D6A2399F2FDD9E9"
+				"6C9E5644460A3A22"
+			]
+			description: ["Used to compress air for later charnel pumping. You can power it by adding a motor port and putting an advanced motor on the port, and start activating it by putting a machine casing and then a machine controller using the casing as a buffer. (Or else the controller becomes alive)"]
+			id: "57F13C9D599EC889"
+			tasks: [
+				{
+					id: "4FEE08E6DECC17C9"
+					item: "neepmeat:large_compressor"
+					type: "item"
+				}
+				{
+					id: "3C1E5A7A86BE077E"
+					item: "neepmeat:living_machine_controller"
+					type: "item"
+				}
+				{
+					id: "61F7705F510AD05D"
+					item: "neepmeat:motor_port"
+					type: "item"
+				}
+				{
+					id: "25230C16D444BA3B"
+					item: "neepmeat:machine_block"
+					type: "item"
+				}
+			]
+			x: 20.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5387A840CA15D056"]
+			description: [
+				"Your integrator has done enough. Now that it can't do more advanced enlightening, you need to replace it with an advanced integrator."
+				""
+				"To get an advanced integrator, use the tissue operator on a integrator egg to get the Chrysalis. You need to surgically implant it into a cow (WITH A PLC, NOT THE ARM) and defeat the Bovine horror to get the egg."
+			]
+			id: "59440137A1CA5C2C"
+			tasks: [
+				{
+					id: "2E96E49C0D699483"
+					item: "neepmeat:chrysalis"
+					type: "item"
+				}
+				{
+					id: "314F530808E48BC7"
+					item: "neepmeat:advanced_integrator"
+					type: "item"
+				}
+			]
+			x: 20.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["66D2B139CD57A30F"]
+			description: ["Now, you can make an implanter to surgically implant yourself with new flesh upgrades and manage your existing upgrades."]
+			id: "5387A840CA15D056"
+			tasks: [
+				{
+					id: "226207FE5912ABB5"
+					item: "neepmeat:implanter"
+					type: "item"
+				}
+				{
+					id: "4D94D90D41107ADE"
+					item: "neepmeat:upgrade_manager"
+					type: "item"
+				}
+			]
+			x: 20.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["489DC7DC222E0909"]
+			description: ["With an advanced integrator secured and slowly awakened, you can now make a divine organ. A prime crafting ingredient in many other recipes."]
+			id: "13BF4CB38F76E856"
+			tasks: [{
+				id: "71273BA06ED3A8CB"
+				item: "neepmeat:divine_organ"
+				type: "item"
+			}]
+			x: 24.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["59440137A1CA5C2C"]
+			description: ["To truly awaken the advanced integrator, you need a pylon to be activated near it. Otherwise, it will only cap at 8GeB."]
+			id: "489DC7DC222E0909"
+			tasks: [{
+				id: "5BBFC6F94873DEE4"
+				item: "neepmeat:pylon"
+				type: "item"
+			}]
+			x: 22.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"57F13C9D599EC889"
+				"13BF4CB38F76E856"
+				"6C9E5644460A3A22"
+			]
+			description: [
+				"By making a charnel pump, you get access to passive ore generation."
+				""
+				"Simply pump in compressed air and integration fluid through fluid ports, and a motor port along with a machine controller with a buffer."
+				""
+				"Dont get too close. The pump is shooting integration fluid into the earth to bring up the ores, and the fumes are not particularly healthy"
+			]
+			id: "72E6412B629D715A"
+			tasks: [
+				{
+					id: "29612007CCF09733"
+					item: "neepmeat:charnel_pump"
+					type: "item"
+				}
+				{
+					id: "7680BBC357104738"
+					item: "neepmeat:machine_block"
+					type: "item"
+				}
+				{
+					id: "24A7DBB2742B7A48"
+					item: "neepmeat:living_machine_controller"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1CF9010516D2FA23"
+					item: { Count: 2, id: "neepmeat:fluid_input_port" }
+					type: "item"
+				}
+				{
+					id: "44E41823BB714166"
+					item: "neepmeat:motor_port"
+					type: "item"
+				}
+			]
+			x: 24.0d
+			y: -5.5d
+		}
+		{
+			description: ["By default, machines die as they work. To mitigate this, you need skin machine blocks or meat steel machine blocks. Placing these next to a machine will slowly heal the machine so it can work at full capacity again."]
+			id: "6C9E5644460A3A22"
+			tasks: [{
+				id: "449B75A9FEE5D8DA"
+				title: "On living machines and self repair"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["72E6412B629D715A"]
+			description: [
+				"To actually collect the ores, you msut place a well head above writhing earth that will sprout around the charnel compactor."
+				""
+				"Currently, this is the best way to generate resources fast."
+			]
+			id: "29BD14DCE1A21B09"
+			tasks: [{
+				id: "4EEC2CBAAAD0984E"
+				item: "neepmeat:well_head"
+				type: "item"
+			}]
+			x: 26.0d
+			y: -5.5d
+		}
+	]
+	title: "But how can I get meaty?"
+}

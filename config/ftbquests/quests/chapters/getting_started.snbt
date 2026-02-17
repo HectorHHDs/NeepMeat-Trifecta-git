@@ -1,0 +1,586 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	icon: "minecraft:oak_log"
+	id: "19DBF8E4AE2F4273"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This modpack is meant to be a mix of RPG and large-resource automation, with the core mods being AE2, Industrial Upgrade, Neepmeat, and Create. Of course, you dont need to get into resource automation, but it would reward you alot to get started on it. Think of it as a long-term  investment."]
+			id: "4EF0A4D4197F8CEE"
+			size: 2.0d
+			tasks: [{
+				id: "3D14B06022A8B169"
+				title: "So what are you getting into?"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4EF0A4D4197F8CEE"]
+			id: "34CCDD756DA13097"
+			rewards: [
+				{
+					count: 12
+					id: "39CE2399F2BACC2A"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "18BD1B4BF060F8CC"
+					item: "biomancy:organic_compound"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "0455933CA7D95DFF"
+					title: "Gather LOTS of wood - you can shift and hold leftclick to chop down entire trees!"
+					type: "checkmark"
+				}
+				{
+					count: 32L
+					id: "7749BD0B70F5C362"
+					item: { Count: 32, id: "minecraft:raw_iron" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "69F94D11188C6B04"
+					item: { Count: 64, id: "minecraft:raw_copper" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "6AB6087AD13634DA"
+					item: { Count: 32, id: "create:raw_zinc" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "4DF91C070BB9E120"
+					item: { Count: 64, id: "minecraft:redstone" }
+					type: "item"
+				}
+			]
+			title: "Resource Gathering!"
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4EF0A4D4197F8CEE"]
+			description: ["For future meat farm maybe"]
+			id: "6FF5FB60856C902C"
+			rewards: [{
+				count: 12
+				id: "452721BEFE1E6286"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "minecraft:oak_log"
+				id: "062DFD132C1ED1BF"
+				optional_task: true
+				structure: "#minecraft:village"
+				title: "Maybe you should find a village too.."
+				type: "structure"
+			}]
+			title: "Find a village"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4EF0A4D4197F8CEE"]
+			id: "596FE60B99B5A71D"
+			rewards: [{
+				id: "6499B5E8086338EB"
+				item: "neepmeat:projector"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				icon: "neepmeat:verrucous_stone_port"
+				id: "1953BE77E6041142"
+				structure: "neepmeat:verrucous_rock"
+				title: "You wanted to find a kidney stone, right?"
+				type: "structure"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["34CCDD756DA13097"]
+			id: "459211A1B2A9B20F"
+			rewards: [{
+				id: "4FAA1D53B923F9B8"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "11346980D87E9FC2"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Entry Ticket to your first subtype of earlygame machinery"
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			description: ["This modpack adds alot of content to the nether as well, but you'll need to go there for infinite lava later on to get some extra power."]
+			id: "7CC7562DA3CF543F"
+			optional: true
+			rewards: [{
+				id: "5D2F939473A2FF4C"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "2629125843CDDA1E"
+				title: "Tour the Nether"
+				type: "dimension"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4EF0A4D4197F8CEE"]
+			description: [""]
+			icon: "minecraft:bread"
+			id: "44DBA5AB331B00BB"
+			optional: true
+			repeat_cooldown: 180
+			rewards: [
+				{
+					id: "70C9E05E1B003145"
+					item: {
+						Count: 1
+						id: "survival_instinct:motorcycle_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0589D42601537BDC"
+					item: {
+						Count: 1
+						id: "dustrial_decor:cardboard_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6952BD8BE1E258F0"
+					item: {
+						Count: 1
+						id: "candlelight:chefs_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30FE764259541F6B"
+					item: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F6F3BC9767B546C"
+					item: {
+						Count: 1
+						id: "butchercraft:butcher_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5414E87F616FE956"
+					item: {
+						Count: 1
+						id: "survival_instinct:stop_sing_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 9
+					id: "38A4AFED49BA026E"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "These will help you out a little, if you don't want to suffer as much. Don't claim these for a harder experience"
+			tasks: [{
+				id: "185CF4508AF4143F"
+				title: "Claim these"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4EF0A4D4197F8CEE"]
+			description: [
+				"\"Thirst Was Taken\" was added. To purify water, you must put it on a campfire to purify it by 1 level, and you can put it in a furnace to purify it by 2 levels."
+				""
+				"Drinking bad water will get you sick or poisoned"
+			]
+			id: "05EB1781B64E9D27"
+			optional: true
+			rewards: [{
+				count: 9
+				id: "343026AA1A19D51E"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:water"
+					}
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "2AC7B72A4851E9D4"
+				title: "I understand"
+				type: "checkmark"
+			}]
+			title: "READ"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			id: "17F8E964A62E713E"
+			rewards: [{
+				id: "13D373A19B410394"
+				item: "dimdoors:item_ag_dim_minecraft_oak_door"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				biome: "dimdoors:limbo"
+				icon: "dimdoors:item_ag_dim_minecraft_oak_door"
+				id: "5AE0D8CACFDE3380"
+				title: "How did we get here?"
+				type: "biome"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4EF0A4D4197F8CEE"]
+			icon: {
+				Count: 1
+				id: "industrialupgrade:sensor/sensor"
+				tag: { }
+			}
+			id: "63E8AAE0A4F41209"
+			optional: true
+			repeat_cooldown: 180
+			rewards: [
+				{
+					id: "7F0DABF1B7C63618"
+					item: "industrialupgrade:book/guide_book"
+					type: "item"
+				}
+				{
+					id: "6FC9790562C5DDFB"
+					item: "tconstruct:materials_and_you"
+					type: "item"
+				}
+				{
+					id: "68C043DDF130A8D5"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "apotheosis:apoth_chronicle"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "260189342A11F49F"
+					item: {
+						Count: 1
+						id: "industrialupgrade:sensor/sensor"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "472474563A5564BA"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "sosorgans:sos_organs_lexicon"
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "655BFE07AFD51410"
+				title: "Lost your books?"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4EF0A4D4197F8CEE"]
+			description: ["For making your first Tinkers' Construct tools >:) Way better than normal tools usually"]
+			id: "2AA3F0A47D515705"
+			tasks: [
+				{
+					id: "77FF94025FA03A24"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+				{
+					id: "04AE30A91176B04C"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "35EF96D43A341B8E"
+					item: { Count: 6, id: "tconstruct:pattern" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2AA3F0A47D515705"]
+			id: "53F4E35551CC6803"
+			tasks: [
+				{
+					id: "6A85842E6881BA9F"
+					item: "tconstruct:puny_smelting"
+					type: "item"
+				}
+				{
+					id: "0AA35F7918222DF6"
+					item: "tconstruct:mighty_smelting"
+					type: "item"
+				}
+				{
+					id: "1941181B78C6AC10"
+					item: "tconstruct:tinkers_gadgetry"
+					type: "item"
+				}
+				{
+					id: "06310C90AE1032F8"
+					item: "tconstruct:fantastic_foundry"
+					type: "item"
+				}
+				{
+					id: "2D2F44CCA8077BB4"
+					item: "tconstruct:encyclopedia"
+					type: "item"
+				}
+			]
+			title: "Tinkers' Construct Guides"
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["662BCF61D62C737A"]
+			description: ["Can collect water at any temperature, and can be heated or cooled down for temperature management."]
+			id: "01A7AC030C5B59BB"
+			tasks: [{
+				id: "426CF9EF756277AB"
+				item: "cold_sweat:waterskin"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["662BCF61D62C737A"]
+			description: [
+				"Can accept coal or ice, and when placed indoors, it will have a cooling or heating effect based on which is active."
+				""
+				"Activate cooling or heating or both by supplying appropriate fuels (coals, ice) and powering the back or side of the hearth."
+			]
+			id: "08F809EDEEC115ED"
+			tasks: [{
+				id: "7D6C420E6E573999"
+				item: "cold_sweat:hearth"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["01A7AC030C5B59BB"]
+			description: ["Boilers and ice boxes can be used to regulate the temperatures of filled waterskins."]
+			id: "66D28D08F1B8F6CF"
+			tasks: [
+				{
+					id: "6A45E3FE44C47AF7"
+					item: "cold_sweat:boiler"
+					type: "item"
+				}
+				{
+					id: "15B9D315DB52CA04"
+					item: "cold_sweat:icebox"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["662BCF61D62C737A"]
+			description: ["Can be fueled by soulsprouts. When carrying these in your offhand or main hand, you will be cooled down below the threshold of overheating. Helps alot in the nether if you dont want to carry around 50 waterskins"]
+			id: "3227714928EE2AAF"
+			tasks: [{
+				id: "20A20BCF1948F50B"
+				item: {
+					Count: 1
+					id: "cold_sweat:soulspring_lamp"
+					tag: {
+						Fuel: 64.0d
+						Lit: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["662BCF61D62C737A"]
+			description: [
+				"You can insulate your armors with wool, hoglin hide, or leather for different effects using this sewing table."
+				""
+				"Purple bar = Neutral insulation"
+				"Red bar = heat insulation (protects you against heat)"
+				"Blue bar = cold insulation (protects you against cold)"
+			]
+			id: "091A50284B22283C"
+			tasks: [
+				{
+					id: "151190D1A8F315A2"
+					item: "cold_sweat:sewing_table"
+					type: "item"
+				}
+				{
+					id: "126F9D60C7F21B0F"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "27F341E328F171C3"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					id: "17ABEC6D56FDFF1F"
+					item: "cold_sweat:hoglin_hide"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["662BCF61D62C737A"]
+			description: ["This armor set provides insulation against heat, if you don't want to insulate your armor with the sewing table"]
+			id: "31D1C185F3B3CCDC"
+			tasks: [
+				{
+					id: "79BF6A368E7B6904"
+					item: {
+						Count: 1
+						id: "cold_sweat:hoglin_headpiece"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3C656C525851498C"
+					item: {
+						Count: 1
+						id: "cold_sweat:hoglin_tunic"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A3418F3A40DB09C"
+					item: {
+						Count: 1
+						id: "cold_sweat:hoglin_trousers"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1A70D22523A3F036"
+					item: {
+						Count: 1
+						id: "cold_sweat:hoglin_hooves"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Must-have for nether traversal"
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4EF0A4D4197F8CEE"]
+			description: ["These modules will help you understand the temperature system this mod uses, and how to control it"]
+			id: "662BCF61D62C737A"
+			size: 2.0d
+			tasks: [{
+				id: "08B20728261A9248"
+				title: "Cold Sweat"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 4.5d
+		}
+	]
+	title: "Getting Started"
+}

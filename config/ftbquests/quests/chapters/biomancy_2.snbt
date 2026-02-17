@@ -1,0 +1,315 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "biomancy_2"
+	group: ""
+	icon: "biomancy:primordial_cradle"
+	id: "2D5AF725585BB262"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["You might want more meat than provided for spreading kindness in the world (or to make cool meat cubes), but neepmeat might notmeat enough for your needmeat. This is where Biomancy comes in. You can use it as a pseudo security or mob dividing system, for more and unique weapon and armor mechanics, and even for more potions if you like that."]
+			id: "5F5718B74C69B7EA"
+			size: 1.2d
+			tasks: [{
+				id: "47197583A7108454"
+				title: "Intro to the kind and uncorrupted world of Biomancy"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F5718B74C69B7EA"]
+			description: [
+				"First, you need a cradle to make your children. Don't get attached to them, you need their meat."
+				"Put meat in the cradle and use 2 potions of healing to activate it. If you're lucky, a meat cube will be made which you can either feed or immediately kill for meat."
+				""
+				"TIP: for a cool base, you should totally put ROTTEN FLESH in there instead of any other meat."
+			]
+			id: "708B54DBC76E6695"
+			size: 1.5d
+			tasks: [{
+				id: "379573957A465DB6"
+				item: "biomancy:primordial_cradle"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["708B54DBC76E6695"]
+			description: [
+				"You need a bioforge for ALL your biomancy recipes. Also, it just looks cool."
+				""
+				"To operate, it needs nutrients. You get nutrients by feeding it meat and food."
+			]
+			id: "03C72049C1C4F877"
+			rewards: [{
+				id: "0EAAC37EA3935403"
+				type: "custom"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "2675F0EB7DCDA0E6"
+				item: "biomancy:bio_forge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4BA1988D504313DF"]
+			description: ["You must use the bio-lab. Actually, this part is optional if you dont want all the new potions"]
+			id: "5440E6A7E3FBA9E8"
+			size: 1.5d
+			tasks: [{
+				id: "2E2C364403AF894A"
+				item: "biomancy:bio_lab"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["03C72049C1C4F877"]
+			description: [
+				"This can decompose alot of vanilla items, bones, plants, biomancy stuff, just alot of stuff."
+				""
+				"However, you need to figure out what decomposes into what products."
+			]
+			id: "4BA1988D504313DF"
+			size: 1.5d
+			tasks: [{
+				id: "039D6898B1C7AF12"
+				item: "biomancy:decomposer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"5440E6A7E3FBA9E8"
+				"0B19D69CC610733C"
+			]
+			description: ["2x Bile \\& Biotic matter \\& Nutrients + Organic Vial"]
+			id: "01E991D4A3B9BCDD"
+			tasks: [{
+				id: "528C7F65EA662D2F"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["01E991D4A3B9BCDD"]
+			description: ["Exotic dust \\& Exotic dust \\& Mineral fragment + Organic Compound"]
+			id: "77A106C60B9262E7"
+			tasks: [{
+				id: "38C22A59C9C09A8B"
+				item: "biomancy:exotic_compound"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["01E991D4A3B9BCDD"]
+			description: ["Hormone Secretion \\& Nutrient paste + Organic Compound"]
+			id: "383147FED3D79067"
+			tasks: [{
+				id: "76227E7BAC9ECCA3"
+				item: "biomancy:genetic_compound"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["01E991D4A3B9BCDD"]
+			description: [
+				"Volatile Fluid + Organic Compound"
+				""
+				"Very explosive. Handle with care"
+			]
+			id: "2DBAE44490A90AAA"
+			tasks: [{
+				id: "25F7AB9457CCC01D"
+				item: "biomancy:unstable_compound"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["383147FED3D79067"]
+			description: ["Nutrient Paste \\& Mineral Fragment \\& Decaying Additive + Genetic Compound"]
+			id: "5C51E8BF937A052D"
+			tasks: [{
+				id: "5AE1F564995EE2A9"
+				item: "biomancy:ageing_serum"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["01E991D4A3B9BCDD"]
+			description: ["Withering ooze \\& Withering ooze + Organic Compound"]
+			id: "3000B16073211C21"
+			tasks: [{
+				id: "5FDB3ACA8DAB9615"
+				item: "biomancy:decaying_additive"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["01E991D4A3B9BCDD"]
+			description: ["2x Regenerative fluid + Organic Compound"]
+			id: "55397E3BC35EAE09"
+			tasks: [{
+				id: "555997CCA39A8ADA"
+				item: "biomancy:healing_additive"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["383147FED3D79067"]
+			description: ["Exotic dust \\& Healing additive \\& 2x Decaying additive + Genetic Compound"]
+			id: "600DE97697CC6F98"
+			tasks: [{
+				id: "521D91EA18BACE87"
+				item: "biomancy:shrinking_serum"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["383147FED3D79067"]
+			description: [
+				"Nutrient paste \\& Hormone secretion \\& Healing Additive \\& Mineral fragment + Genetic Compound"
+				""
+				"No, it doesn't do what it sounds like."
+			]
+			id: "36747669E2DB9D75"
+			tasks: [{
+				id: "34A36E7227E6EF16"
+				item: "biomancy:enlargement_serum"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["383147FED3D79067"]
+			description: [
+				"Healing Additive \\& Nutrient paste \\& Decaying additive + Genetic Compound"
+				""
+				"Could sell for millions"
+			]
+			id: "2BD8B232803D4737"
+			tasks: [{
+				id: "7BCB3A720AC2E661"
+				item: "biomancy:rejuvenation_serum"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["383147FED3D79067"]
+			description: [
+				"Nutrient paste \\& Any flower \\& Hormone secretion \\& Cocoa beans + Genetic Compound"
+				""
+				"Notably, doesn't seem to work on players."
+			]
+			id: "7ACF5F77F323A174"
+			tasks: [{
+				id: "5AE34C79A0D8479C"
+				item: "biomancy:breeding_stimulant"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["77A106C60B9262E7"]
+			description: ["Decaying Additive \\& Healing Additive + Exotic Compound"]
+			id: "09F7D687444A814E"
+			tasks: [{
+				id: "577493C2DF376984"
+				item: "biomancy:cleansing_serum"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["77A106C60B9262E7"]
+			description: ["Healing additive \\& Exotic dust \\& Mineral Fragment + Exotic Compound"]
+			id: "4FA26B6FF2FF3CC5"
+			tasks: [{
+				id: "387D86D3E0B119D7"
+				item: "biomancy:absorption_boost"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["77A106C60B9262E7"]
+			description: ["Sugar \\& Bile + Exotic Compound"]
+			id: "45134F162D4C4F38"
+			tasks: [{
+				id: "267950425BE6B074"
+				item: "biomancy:insomnia_cure"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["77A106C60B9262E7"]
+			description: [
+				"Volatile fluid \\& Hormone secretion + Exotic Compound"
+				""
+				"\"What's ragebait? Thats not real\""
+			]
+			id: "5B2185F34F9E0375"
+			tasks: [{
+				id: "034C79035F59CBD7"
+				item: "biomancy:frenzy_serum"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["03C72049C1C4F877"]
+			description: ["For injecting yourself OR others with suspicious substances >:)"]
+			id: "0B19D69CC610733C"
+			tasks: [{
+				id: "7E4D299ACCC139E5"
+				item: {
+					Count: 1
+					id: "biomancy:injector"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+	]
+	title: "Biomancy 2"
+}

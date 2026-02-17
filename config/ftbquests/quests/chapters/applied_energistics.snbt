@@ -1,0 +1,470 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energistics"
+	group: ""
+	icon: "ae2:mysterious_cube"
+	id: "25A1685DAE962ADB"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["you need to find a skystone meteor to harvest certus quartz and obtain the inscribers by breaking the cube inside :p"]
+			id: "2BCF8A6D0C52B5F9"
+			tasks: [{
+				id: "2425B8405C53A48D"
+				title: "Find a meteor :p"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2BCF8A6D0C52B5F9"
+				"6B9CEA23146CC4A1"
+			]
+			description: ["you'll need this for your most important crafts in AE2 as well as circuits"]
+			id: "53047F90B609A887"
+			rewards: [{
+				id: "73DBE0928F8A858F"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73CB201DB8634540"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2BCF8A6D0C52B5F9"]
+			description: [
+				"Now your power options are plentiful - but the simplest input is a coal generator. You can place it right next to the inscriber or connect it to an energy acceptor via cables."
+				""
+				"Your options for energy generation are:"
+				"Create: New age (use coils to generate FE from rotational energy)"
+				"Industrial Upgrade generators"
+				"AE2 generators"
+				""
+				"personally, my favorite is Create: New age even though it can take alot of space; its very modular so you can use many many steam engines to power your generator coils and use different magnets for efficient output."
+			]
+			id: "6B9CEA23146CC4A1"
+			rewards: [{
+				id: "35D7621C4AA05A90"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C365C067EBE7A62"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2BCF8A6D0C52B5F9"]
+			description: [
+				"Cables are very important- they can connect inventories and even power sources. Smart cables should be used as much as possible since you're probably starting out, as they let you see how many channels are being used."
+				""
+				"Small cables have 8 channels, big cables have 32. Some appliances can't be connected to big cables, so it is efficient to have the bigger ones as the backbone of a network and have the smaller cables branch off of it"
+			]
+			id: "16DF2F01BDA742CD"
+			rewards: [{
+				id: "7B7798D81EB76D4D"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2BE2B90F83858C24"
+				item: "ae2:black_smart_cable"
+				type: "item"
+			}]
+			title: "Cables"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["16DF2F01BDA742CD"]
+			description: [
+				"Now when breaking your cables, you might notice that you dont get your cables back. This is because you're breaking your cables, and broken cables are broken."
+				""
+				"You can pick up cables by using a wrench >:) they can be made of nether quartz or certus quartz and you can pick cabels up by shift right clicking them"
+			]
+			id: "24F7652340B4E1E0"
+			rewards: [{
+				id: "55FF91F8D967891A"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A0292265C3020C7"
+				item: "ae2:nether_quartz_wrench"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["16DF2F01BDA742CD"]
+			description: ["These cutting knives can be used to make cable anchors- these can stop cables from automatically connecting together, which will be very useful for organizing"]
+			id: "006444E8435F830F"
+			rewards: [{
+				id: "22A909169EDC6F18"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "327A22B5025B0C79"
+				item: {
+					Count: 1
+					id: "ae2:nether_quartz_cutting_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["53047F90B609A887"]
+			description: ["Used for charging certus quartz and some other recipes"]
+			id: "2697AC770A78C1BC"
+			rewards: [{
+				id: "2F80BA1AF3741C4A"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32B4ACBB1EA6A9AF"
+				item: "ae2:charger"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["53047F90B609A887"]
+			description: ["These will be used for crafting ALOT of AE2 stuff"]
+			id: "31E47307285251E7"
+			rewards: [{
+				id: "378EF256F506D379"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.2d
+			tasks: [
+				{
+					id: "0CD0C3025DAA6672"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "03E3CED5760F6F70"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "2B73F581098EC826"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			title: "Processors"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["31E47307285251E7"]
+			description: ["This is the backbone of an item cell - it can combine with any sized item cell component"]
+			id: "396DC1DFAEC83DD1"
+			rewards: [{
+				id: "5F249669895641EA"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			tasks: [{
+				id: "21586E1229D2142E"
+				item: "ae2:item_cell_housing"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["31E47307285251E7"]
+			description: [
+				"Your first item component! these can store 8192 of an item or 4032 of 63 different items"
+				""
+				"but how can you access this storage?"
+			]
+			id: "151F4854C5383CB7"
+			rewards: [{
+				id: "6DF1A9162B379423"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.2d
+			tasks: [{
+				id: "6D5F03B09080803B"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"151F4854C5383CB7"
+				"396DC1DFAEC83DD1"
+			]
+			description: [
+				"You made your first 1k storage and now you need an ME drive rack to host it. You cant access your storage yet though- you need an interface"
+				""
+				"(oh right, also your drive needs to be powered)"
+			]
+			id: "751F467BFAA1F4E3"
+			rewards: [{
+				id: "5EF19C3C64A6C546"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.2d
+			tasks: [
+				{
+					id: "3F8D0E190D7BACBB"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "421510552410B1E5"
+					item: "ae2:drive"
+					type: "item"
+				}
+			]
+			title: "Your first network center"
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"24F7652340B4E1E0"
+				"751F467BFAA1F4E3"
+				"006444E8435F830F"
+			]
+			description: [
+				"Now this is gonna be your most useful terminal for now, but there are other terminals that you can connect to your network through cables"
+				""
+				"you can also see visual examples in the AE2 guidebook as well"
+			]
+			id: "22B5E505EF7A65B9"
+			rewards: [{
+				id: "5539C12BCBFF09F5"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.2d
+			tasks: [{
+				id: "7051A7F5358A1C53"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["151F4854C5383CB7"]
+			description: [
+				"Storage bytes are used like this:"
+				""
+				"Each stack uses 8 bytes, plus an additional byte per 8-10 items"
+				"This makes full stacks more efficient while small stacks take more bytes than they need."
+				""
+				"Example: 64 quartz will take up 16 bytes, while 1 quartz still takes up 9 bytes"
+			]
+			id: "5FB83F2A19D91343"
+			rewards: [{
+				id: "6F1F7212D8A8F6CE"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "5F86CE57E027A8AD"
+				title: "What are bytes?"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2BCF8A6D0C52B5F9"]
+			description: [
+				"Now with AE2, you can do so much more than just getting ridiculous amounts of storage: you can set up patterns to craft items with any crafting processes by specifying their inputs and outputs."
+				""
+				"These are your most basic requirements for moving onto this stage of automation"
+			]
+			id: "24BA60B8C3487CDE"
+			rewards: [{
+				id: "16C3625EA042F582"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.2d
+			tasks: [
+				{
+					id: "23C52B142C456810"
+					item: "ae2:pattern_encoding_terminal"
+					type: "item"
+				}
+				{
+					id: "17F3E25F752D9067"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+				{
+					id: "4B4C7BD895B9E5FC"
+					item: "ae2:crafting_accelerator"
+					type: "item"
+				}
+				{
+					id: "69F81A88C7E4C7AF"
+					item: "ae2:1k_crafting_storage"
+					type: "item"
+				}
+				{
+					id: "0642E911CE5341A6"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "67D8A198887B7DD2"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+				{
+					id: "7F0042A20A0010FD"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+			]
+			title: "Introduction to on-demand processing"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2BCF8A6D0C52B5F9"]
+			description: [
+				"If you want to get into massive production lines with AE2, 8 or 32 channels wont be enough"
+				""
+				"These ME controllers act as modular routers with each face providing 3 channels, and these controllers can be connected together at a max of 7x7x7 cubes to provide even more channels"
+			]
+			id: "19CC3CF7DF0E7459"
+			rewards: [{
+				id: "5E418387C59FE7FD"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.2d
+			tasks: [{
+				id: "335A841D5B6DEA9D"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "Getting more channels to work with"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2BCF8A6D0C52B5F9"]
+			description: [
+				"Now, there are different types of patterns but the crafting and smithing ones are pretty easy. Just put in the recipe, put in the output, and then encode it onto a blank pattern and it'll make the item."
+				""
+				"You might want to make something that requires other items that have their own recipes - you can make patterns for these items and when you want to craft the main item, the patterns of the items below it are called and made first."
+				""
+				"First task - is to make a wooden pickaxe just from wood logs through this system"
+				"{@pagebreak}"
+				"Now after encoding the pattern(s), you want to place your pattern in a pattern provider connected to your network. Now a new item should show up as \"wooden pickaxe\" and tagged as \"craftable\" but you cant actually craft it yet."
+				""
+				"Now you need to make a molecular assembler and place it right next to your pattern provider, and you're done"
+				""
+				"You can click the pattern in the crafting terminal and put how many pickaxes you want, and it'll use your materials (wood logs) in the drives to make it"
+			]
+			id: "78A716F4C182D076"
+			rewards: [{
+				id: "0ED8BF117016648F"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.4d
+			tasks: [
+				{
+					id: "6A79B1B3860512B5"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+				{
+					id: "2522E89D4F4BB9E9"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+			]
+			title: "First Task and Notes"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["78A716F4C182D076"]
+			description: [
+				"Now its time for your last task before you know how to automate basically everything (except spatial storage, because even I have not fully learned it)"
+				"{@pagebreak}"
+				"Now its time to go into process patterns - the patterns that make AE2 compatible with so many modded crafting stations. However, your task is very simple and it goes over a few key ideas about how pattern providers work:"
+				""
+				"&lTASK: Make a smelting process"
+				"{@pagebreak}"
+				"First, make a process pattern by placing a single raw iron into your input and a iron ingot as your primary output and encode."
+				""
+				"Next, you want to place the encoded pattern into a connected pattern provider right next to your furnace. Now whenever you make a crafting request for iron, it'll send raw iron into the furnace but no coal."
+				""
+				"You can add coal to the furnace through hoppers or Create, but you can also do it in AE2 by connecting the furnace to the network via an export bus, only accepting coal."
+				"{@pagebreak}"
+				"Now, once you have your coal and you can request to put raw iron in the furnace, you might notice that it doesnt actually take the iron ingots back into the network and into your drive"
+				""
+				"You can fix this by putting a hopper under the furnace to pick up all of the iron ingots you make, then connecting it to the network via an input bus. Now, you have on-demand smelting for iron without leaving your workstation :p"
+				"{@pagebreak}"
+				"This is a very nice scaleable build - you can even repeat the furnace setup on each of the pattern provider's faces and when you request more than 1 iron, it'll automatically parralelize the process- splitting the raw iron to all connected furnaces."
+			]
+			id: "78006563F05EDAA4"
+			rewards: [{
+				id: "7A87A132549E4077"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.4d
+			tasks: [
+				{
+					id: "445B64A15D1C53AE"
+					title: "Last Task"
+					type: "checkmark"
+				}
+				{
+					id: "12A9B409F48F5DC0"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 3.0d
+		}
+	]
+	title: "Applied Energistics and Autocrafting"
+}

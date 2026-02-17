@@ -1,0 +1,329 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "but_i_want_industry"
+	group: ""
+	icon: "create:large_cogwheel"
+	id: "789AE1A1018BD33B"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["You're still very early game, so the best thing to invest in right now is some simple create machinery. If you need to, you can look at online guides for this but it's basically redstone with cogs."]
+			id: "2599B5A666675295"
+			size: 2.0d
+			tasks: [{
+				id: "3BB176401CF8172C"
+				title: "So, uhh, what do I do?"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2599B5A666675295"]
+			description: ["You need some waterwheels as your first power source in the create mod."]
+			id: "4FFF8B803429B108"
+			rewards: [{
+				id: "0090F9853DA1572B"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "69351F7E33F90096"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			title: "SU Power generation"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4FFF8B803429B108"
+				"26B709D22162B728"
+			]
+			description: [
+				"The single most useful earlygame machine: Just put water in front of this fan, power it, and items will be washed!"
+				"If you put lava or fire in front, it can even smelt large amounts of ores if you put your items on a depot in front of the lava and the fan."
+				"Putting a campfire in front will smoke any food placed in front. "
+			]
+			id: "0B01378A04F53DE4"
+			rewards: [{
+				id: "45C16BEAA5C81DEA"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "1BE24530879C851E"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "Your First Fan"
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4FFF8B803429B108"]
+			description: ["This is a rare freebie - use cogs and shafts to move rotational power and power Create mod machinery"]
+			id: "26B709D22162B728"
+			rewards: [{
+				count: 8
+				id: "0179132A5CBB4E92"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					count: 6L
+					id: "29E4C3048D1944EA"
+					item: { Count: 6, id: "create:cogwheel" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "45E7F129C9D01F66"
+					item: { Count: 3, id: "create:large_cogwheel" }
+					type: "item"
+				}
+			]
+			title: "Moving power"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["24E45BC107B03A15"]
+			description: ["Using the machines you made so far and a millstone, you can get started on generating passive iron from cobblestone!"]
+			id: "7FA38D0E7BF6C3C3"
+			rewards: [
+				{
+					id: "16E2581EC0AB4C48"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 2
+					id: "5F39364E5D569661"
+					item: "biomancy:organic_compound"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "353927E2A8AC15C7"
+					title: "Make a small iron farm!"
+					type: "checkmark"
+				}
+				{
+					id: "2A9383FB688C0314"
+					item: "create:millstone"
+					type: "item"
+				}
+				{
+					id: "753B3682A603875B"
+					item: "create:belt_connector"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["26B709D22162B728"]
+			description: [
+				"By powering a mechanical press and putting iron or any compatible item one block below it, you're able to make some"
+				"sheets at a 1:1 ratio! You will be using these sheets in order to make your first fully automatic cobble generator."
+			]
+			id: "32D4651BCE490B06"
+			rewards: [{
+				id: "3C5A5DB3CF8F3F0B"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "280E79A3A047E0C3"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "7B5A61FE1FB763CB"
+					item: "create:iron_sheet"
+					type: "item"
+				}
+			]
+			title: "Pressing"
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["32D4651BCE490B06"]
+			description: ["A drill, when powered, can break any block in front of it! use it to make a cobblestone generator for later automation."]
+			id: "49E318CD3779B2B8"
+			rewards: [{
+				id: "40F65AC3FC96818B"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "65306227DB454F5B"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["49E318CD3779B2B8"]
+			description: [
+				"You'll need these to move stuff into and out of machines and storages. The arrow shows whether the funnel"
+				"accepts inputs or only outputs items."
+			]
+			id: "24E45BC107B03A15"
+			rewards: [{
+				id: "51FEA015D8E0F291"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "4D6C9C64F5268503"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7FA38D0E7BF6C3C3"]
+			description: [
+				"By washing red sand, you can get gold nuggets! Cool, right? Even cooler, you can automate making red sand, all from cobblestone!"
+				""
+				"This costs alot to make, but this is gonna be a good way to generate gold until you get to mystical agriculture."
+			]
+			id: "518528E327F83343"
+			optional: true
+			rewards: [
+				{
+					id: "6C26DC5F29D6FD44"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					count: 4
+					id: "382F747E4ACB5EC7"
+					item: "biomancy:organic_compound"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "1534EFFB3F61314C"
+				item: "minecraft:red_sand"
+				type: "item"
+			}]
+			title: "Make a gold farm!"
+			x: 11.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2599B5A666675295"]
+			description: [
+				"You might want wayyyy more power than you could possibly need, or even just want to power your other modded machines with create; this tech tree will teach you how to get better power generation and eventually convert it to FE"
+				"{@pagebreak}"
+				"&lSteam Engines:"
+				"To make a steam engine, first make a fluid tank and attach a steam engine. This is simple, but it isn't quite ready or even good yet-"
+				"If you have engineering goggles a new menu will pop up with level, water, space, and heat"
+				""
+				"You can provide some heat with fire and campfires, but the method you'll want to use most is blaze burners (just trap blazes in burners)"
+				"Blaze burners will provide more heat if they're turned on by being fed flammable objects or lava. You can use mechanical arms to automate this easily"
+				""
+				"For water, just use a create mod pump to pipe in water from an infinite water source."
+				"{@pagebreak}"
+				"Now, just put a shaft across from the steam engine and it'll start rotating and providing power. You can scale up the steam engine by adding more fluid tanks and blaze burners"
+			]
+			id: "205C87D0ED3645BA"
+			rewards: [{
+				id: "4ACDD0A1590DF9E2"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "754D6758F6D0ABEA"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					id: "19135514F831A927"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "Better power generation"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["205C87D0ED3645BA"]
+			description: [
+				"Now, you might think this is moving fast, but really, this WILL take more time to finish."
+				""
+				"This is how to make your rotational energy wayy more portable."
+				"{@pagebreak}"
+				"First, you need the generator coil and plug it into your (hopefully bigger) steam engine for it to start rotating. Now to actually make electricity, you need to place magnets around the coil."
+				""
+				"You can look at the coil with the magnets and it'll highlight and place the magnets around the coil for you."
+				""
+				"Having more and powerful magnets makes the generator take up more SU in return for being more efficient or converting more SU to electricity."
+				"{@pagebreak}"
+				"You can then put a carbon brush onto the other end and a connector on it. You can bridge connections with wires and other connectors, and you can convert back from electricity to SU through connecting motors to electricity."
+			]
+			id: "5117CBC277DDC3F2"
+			rewards: [{
+				id: "03C69908AACFDF57"
+				item: "biomancy:organic_compound"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "7D2D48CA5D4D8D92"
+					item: "create_new_age:magnetite_block"
+					type: "item"
+				}
+				{
+					id: "5B617730C07EB2A9"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+				{
+					id: "477E6C1B05F3EA47"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+				{
+					id: "7FD07BB9B83C0AAE"
+					item: "create_new_age:copper_wire"
+					type: "item"
+				}
+				{
+					id: "2FE4E2F5B5816CA8"
+					item: "create_new_age:electrical_connector"
+					type: "item"
+				}
+			]
+			title: "Electricity!"
+			x: -1.5d
+			y: 3.0d
+		}
+	]
+	title: "But I want CREATE"
+}

@@ -1,0 +1,48 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "just_a_reminder"
+	group: ""
+	id: "3BBFF8330CF4D36F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			disable_toast: true
+			id: "45B3F7A33EAAC189"
+			rewards: [{
+				auto: "invisible"
+				command: "/say I like dipping my toes in sugar water"
+				elevate_perms: true
+				id: "64A08B11812DFDA6"
+				type: "command"
+			}]
+			tasks: [{
+				id: "64EC921F24E11F42"
+				title: "useful cmd"
+				type: "checkmark"
+			}]
+			title: "Destroy all items (use this for lag)"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"This pack is intended to be played with Lost Cities. To start a world with it, you must go into world creation and go into MISC."
+				""
+				"There will be a tab for enabling Lost Cities there."
+			]
+			id: "3A5C5982851CD72C"
+			size: 2.0d
+			tasks: [{
+				id: "18FBA7AF1D3F1D55"
+				title: "NOTICE"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "Just a reminder:"
+}

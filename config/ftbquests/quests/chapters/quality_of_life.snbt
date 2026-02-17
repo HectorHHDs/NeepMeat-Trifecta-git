@@ -1,0 +1,208 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "quality_of_life"
+	group: ""
+	icon: "farmersdelight:cooking_pot"
+	id: "27A9402BA687C062"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Can be used to find biomes and structures, respectively."]
+			id: "519D2D9472FB2FD8"
+			tasks: [
+				{
+					id: "70D297B887DEBBDE"
+					item: {
+						Count: 1
+						id: "naturescompass:naturescompass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7DCA3A695D8225A0"
+					item: {
+						Count: 1
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Compasses"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			description: ["Used for storages"]
+			id: "35D566EE4229C748"
+			tasks: [
+				{
+					id: "547E7F4C1527EBE0"
+					item: "storagedrawers:oak_full_drawers_4"
+					type: "item"
+				}
+				{
+					id: "0EF68A73A9DC6456"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+			]
+			title: "Storage options"
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			description: ["Trust me, its here somewhere"]
+			id: "39B7EDC079DBAB25"
+			tasks: [{
+				id: "01BF4C6058DFD0C1"
+				item: "minecraft:spruce_wood"
+				type: "item"
+			}]
+			title: "Deep Mob Learning"
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			description: ["More biome content and new way to cook new foods"]
+			id: "48DFD314BA315661"
+			tasks: [{
+				id: "3AAA863CBC9D0D14"
+				item: "meadow:cooking_cauldron"
+				type: "item"
+			}]
+			title: "[Let's Do] Meadow"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			description: ["Adds potion mixing in cauldrons"]
+			id: "58F5130E02C13577"
+			tasks: [{
+				id: "1B59E566E7AC5CC4"
+				item: "amendments:dragon_charge"
+				type: "item"
+			}]
+			title: "Amendments"
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			description: ["You'll love this for VS or any big contraption"]
+			id: "77A8D10A9B1122E0"
+			tasks: [{
+				id: "3392D6F259A9400E"
+				item: "create_tweaked_controllers:tweaked_linked_controller"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			description: ["For all your decoration needs"]
+			id: "11AF51E16537D6EF"
+			tasks: [{
+				id: "5AE82E75DE36B58F"
+				item: "dustrial_decor:bolted_industrial_iron_block"
+				type: "item"
+			}]
+			title: "'Dustrial Decor and Others"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			id: "6336DF76AF3D36D2"
+			tasks: [{
+				id: "5E76356CCBD2E77B"
+				item: {
+					Count: 1
+					id: "scguns:plasgun"
+					tag: {
+						AmmoCount: 15
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Scorched Guns"
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			description: ["Will help you out with the new ore generation"]
+			id: "427546B13B9889DA"
+			tasks: [{
+				id: "78931BEEBB6B0913"
+				item: {
+					Count: 1
+					id: "industrialupgrade:sensor/sensor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["77F597254D435FC0"]
+			description: ["\"NOOO STOP NUKING MY BASEEE\""]
+			id: "5700B777B0A3867E"
+			tasks: [{
+				id: "06726873869AAEC9"
+				item: "securitycraft:reinforced_light_gray_glazed_terracotta"
+				type: "item"
+			}]
+			title: "SecurityCraft"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			description: ["\"Im gonna nuke EVERYTHING\""]
+			id: "77F597254D435FC0"
+			tasks: [{
+				id: "747D0CB1A39E0168"
+				item: "industrialupgrade:nuclear_bomb/nuclear_bomb"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			description: ["For some cool enemies and new mechanics >:)"]
+			id: "39C834C553B85C1F"
+			tasks: [{
+				id: "251680262B3ACDE8"
+				item: {
+					Count: 1
+					id: "sons_of_sins:flesh_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sons of Sin + Addons"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"This is a chunk pre-generator, so you can have it running while you're not on so that chunks are much faster to load"
+				""
+				"Do /chunky help"
+			]
+			id: "3B1A05E3708149E8"
+			tasks: [{
+				id: "431FC29FF81DD233"
+				title: "Chunky"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+	]
+	title: "Quality Of Life"
+}
