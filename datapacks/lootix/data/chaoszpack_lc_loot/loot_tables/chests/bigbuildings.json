@@ -322,7 +322,7 @@
                  },
                 {
                     "type": "item",
-                    "name": "industrialupgrade:crafting_elements/crafting_272_element",
+                    "name": "immersiveengineering:toolupgrade_shield_flash",
                     "weight": 2,
                     "functions": [
                         {
@@ -429,3 +429,4 @@
         }
     ]
 }
+
